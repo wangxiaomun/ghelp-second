@@ -1,0 +1,107 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title MicroG-Help
+    meta(name='description', content='MicroGHelp')
+    // Latest compiled and minified CSS
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+    // Optional theme
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css')
+  body
+    header
+      .nvbar.navbar-inverse.navbar-fixed-top
+        .container
+          .nvbar-header
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href='#')
+              .text-primary G-Help
+            a.navbar-brand(href='#')
+              .text-primary Home Page
+          #navbar.navbar-collapse.collapse
+            form.navbar-form.navbar-right
+              .form-group
+                input.form-control(type='text', placeholder='Email')
+              .form-group
+                input.form-control(type='password', placeholder='Password')
+              button.btn.btn-success(type='submit') Sign in
+      .jumbotron
+        .container
+          .text-primary
+            h2 Welcome to G-Help
+          p
+            a.btn.btn-primary.btn-lg(href='/reg', role='button') Join Us »
+    .container
+      .row
+        .col-md-2
+          .well
+            .text-primary
+              h3 Links to
+            p
+              small
+                a(href='http://www.mun.ca') MUN
+            p
+              small
+                a(href='http://www.mun.ca/regoff/calendar/') University Calendar
+            p
+              small
+                a(href='http://www.library.mun.ca') Library
+            p
+              small
+                a(href='http://www.mun.ca/main/bookstores.php') BookStores
+            p
+              small
+                a(href='http://www.mun.ca/campus_map/learscail/') Maps
+            p
+              small
+                a(href='http://www.mun.ca/cep/parking/') Parking
+        .col-md-4.col-md-offset-2
+          .text-primary
+            h2 Introduction
+          .content
+            p
+              | (G-HELP) that will provide support services/information to new Computer Science graduate students.
+              | The system will offer newcomers information about housing, classes, instructors and research possibilities.
+              | Each new student will be assigned with a voluntary mentor, who will guide him/her throughout the first semester
+              | at MUN.The system will also offer interested host families the opportunity to register with G-HELP.After
+              | registration the system will assign students to a host family based on a set of predefined criteria.
+              | Additionally G-HELP will facilitate the organization of sport and social events for new (and old) graduate students.
+        .col-md-2.col-md-offset-2
+          .well
+            .text-primary
+              h3 Links to
+            p
+              small
+                a(href='/housing') Housing
+            p
+              small
+                a(href='http://www.mun.ca/regoff/calendar/') Mentors
+            p
+              small
+                a(href='http://www.library.mun.ca') Orientation
+            p
+              small
+                a(href='http://online.mun.ca/d2l/home') D2L
+            p
+              small
+                a(href='https://login.mun.ca/cas/login') My MUN
+            p
+              small
+                a(href='http://www.mun.ca/student/') Student Life
+    footer
+      .container
+        hr
+        p
+          small
+            a(href='http://facebook.com/') Link us
+            | On faceboook
+        p Copyright © Xiao Wang, 2015
+        p wangxiaomun@gmail.com
+    // Latest compiled and minified JavaScript
+    script(src='http://code.jquery.com/jquery-2.1.4.min.js')
+    | "
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')

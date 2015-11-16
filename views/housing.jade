@@ -1,0 +1,128 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title MicroG-Help
+    meta(name='description', content='MicroGHelp')
+    // Latest compiled and minified CSS
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+    // Optional theme
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css')
+  body
+    header
+      .nvbar.navbar-inverse.navbar-fixed-top
+        .container
+          .nvbar-header
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href='#')
+              .text-primary G-Help
+            a.navbar-brand(href='#')
+              .text-primary Home Page
+          #navbar.navbar-collapse.collapse
+            form.navbar-form.navbar-right
+              .form-group
+                input.form-control(type='text', placeholder='Email')
+              .form-group
+                input.form-control(type='password', placeholder='Password')
+              button.btn.btn-success(type='submit') Sign in
+      .jumbotron
+        .container
+          .text-primary
+            h2 Welcome to G-Help
+    .container
+      .row
+        .col-md-2
+          .well
+            .text-primary
+              h3 List of Student
+            .panel.panel-default
+              .panel-body
+                .list-group
+                  a.list-group-item.list-group-item-danger(href='') Cecilia
+                  a.list-group-item.list-group-item-warning(href='') Claudia
+                  a.list-group-item.list-group-item-warning(href='') Danae
+                  a.list-group-item.list-group-item-info(href='') Cecile
+                  a.list-group-item.list-group-item-success(href='') Fiona
+        .col-md-6.col-sm-offset-1
+          .well
+            legend
+              .text-primary
+                h2 Housing Information
+            .container
+              ul.nav.nav-pills(role='tablist')
+                li.active(role='presentation')
+                  a(href='#basic', aria-controls='home', role='tab', data-toggle='tab') Image
+                li(role='presentation')
+                  a(href='#profile', aria-controls='profile', role='tab', data-toggle='tab') Profile
+                li(role='presentation')
+                  a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') Contact
+            br
+            .tab-content
+              #basic.tab-pane.fade.in.active
+                .panel.panel-default
+                  .panel-body
+                    #carousel-ex.carousel.slide(data-ride='carousel')
+                      ol.carousel-indicators
+                        li.active(data-target='#carousel-ex', data-slide-to='0')
+                        li(data-target='#carousel-ex', data-slide-to='1')
+                        li(data-target='#carousel-ex', data-slide-to='2')
+                        li(data-target='#carousel-ex', data-slide-to='3')
+                        li(data-target='#carousel-ex', data-slide-to='4')
+                      .carousel-inner
+                        .item.active
+                          img(src='/images/1.jpg', alt='image')
+                        .item
+                          img(src='/images/2.jpg', alt='image')
+                        .item
+                          img(src='/images/3.jpg', alt='image')
+                        .item
+                          img(src='/images/4.jpg', alt='image')
+                        .item
+                          img(src='/images/5.jpg', alt='image')
+              #profile.tab-pane.fade
+                .panel.panel-default
+                  .panel-body
+                    ul.list-group
+                      li.list-group-item Date Listed: 22-Oct-2015
+                      li.list-group-item Price(by Month): $500
+                      li.list-group-item For rent by: Owner
+                      li.list-group-item Furnished: Yes
+                      li.list-group-item Adress: XXXXXX 
+              #messages.tab-pane.fade
+                .panel.panel-default
+                  .panel-body
+                    ul.list-group
+                      li.list-group-item Name: XXXX
+                      li.list-group-item Tele Num: (709)-XXX-XXX
+                      li.list-group-item Email: Example@XXX.com
+                      li.list-group-item Mail Box: XXXXXXXXX
+                      li.list-group-item Identity In G-Help: Host Family
+        .col-md-2.col-sm-offset-1
+          .well
+            .text-primary
+              h3 List of Event
+            .panel.panel-default
+              .panel-body
+                .list-group
+                  a.list-group-item.list-group-item-danger(href='') Seminar
+                  a.list-group-item.list-group-item-warning(href='') Library Introduction
+                  a.list-group-item.list-group-item-info(href='') Orientation
+                  a.list-group-item.list-group-item-info(href='') Answers
+                  a.list-group-item.list-group-item-success(href='') Meeting
+    footer
+      .container
+        hr
+        p
+          small
+            a(href='http://facebook.com/') Link us
+            | On faceboook
+        p Copyright ? Xiao Wang, 2015
+        p wangxiaomun@gmail.com
+    // Latest compiled and minified JavaScript
+    script(src='http://code.jquery.com/jquery-2.1.4.min.js')
+    | "
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')

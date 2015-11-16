@@ -1,0 +1,114 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title MicroG-Help
+    meta(name='description', content='MicroGHelp')
+    // Latest compiled and minified CSS
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+    // Optional theme
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css')
+  body
+    header
+      .nvbar.navbar-inverse.navbar-fixed-top
+        .container
+          .nvbar-header
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href='#')
+              .text-primary G-Help
+            a.navbar-brand(href='#')
+              .text-primary Home Page
+          #navbar.navbar-collapse.collapse
+            form.navbar-form.navbar-right
+              .form-group
+                input.form-control(type='text', placeholder='Email')
+              .form-group
+                input.form-control(type='password', placeholder='Password')
+              button.btn.btn-success(type='submit') Sign in
+      .jumbotron
+        .container
+          .text-primary
+            h2 Welcome to G-Help
+    .container
+      .row
+        .col-md-2
+          .well
+            .text-primary
+              h3 Links to
+            p
+              small
+                a(href='http://www.mun.ca') MUN
+            p
+              small
+                a(href='http://www.mun.ca/regoff/calendar/') University Calendar
+            p
+              small
+                a(href='http://www.library.mun.ca') Library
+            p
+              small
+                a(href='http://www.mun.ca/main/bookstores.php') BookStores
+            p
+              small
+                a(href='http://www.mun.ca/campus_map/learscail/') Maps
+            p
+              small
+                a(href='http://www.mun.ca/cep/parking/') Parking
+        .col-md-4.col-md-offset-2
+          .well
+            legend
+              .text-primary
+                h2 New to G-Help? Sign up!
+            form.form-horizontal(action='', method='post')
+              .form-group
+                label.col-sm-3.control-label(for='username') Name: 
+                .col-sm-8
+                  input#username.form-control(name='username', placeholder='Full Name', type='text')
+              .form-group
+                label.col-sm-3.control-label(for='email') E-Mail:
+                .col-sm-8
+                  input#email.form-control(name='email', placeholder='example@domain.com', type='email')
+              .form-group
+                label.col-sm-3.control-label(for='password') Password:
+                .col-sm-8
+                  input#password.form-control(name='password', placeholder='Password', type='password')
+              .form-group
+                button.btn.btn-warning.col-sm-6.col-sm-offset-1(type='submit') Sign up for G-Help
+        .col-md-2.col-md-offset-2
+          .well
+            .text-primary
+              h3 Links to
+            p
+              small
+                a(href='/housing') Housing
+            p
+              small
+                a(href='http://www.mun.ca/regoff/calendar/') Mentors
+            p
+              small
+                a(href='http://www.library.mun.ca') Orientation
+            p
+              small
+                a(href='http://online.mun.ca/d2l/home') D2L
+            p
+              small
+                a(href='https://login.mun.ca/cas/login') My MUN
+            p
+              small
+                a(href='http://www.mun.ca/student/') Student Life
+    footer
+      .container
+        hr
+        p
+          small
+            a(href='http://facebook.com/') Link us
+            | On faceboook
+        p Copyright ? Xiao Wang, 2015
+        p wangxiaomun@gmail.com
+    // Latest compiled and minified JavaScript
+    script(src='http://code.jquery.com/jquery-2.1.4.min.js')
+    | "
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')

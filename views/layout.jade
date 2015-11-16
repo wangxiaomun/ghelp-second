@@ -1,0 +1,32 @@
+doctype html
+html
+  head
+    title
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+    style(type='text/css').
+      body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+      }
+    link(href='stylesheets/bootstrap-responsive.css', rel='stylesheet')
+  body
+    .navbar.navbar-fixed-top.navbar-inverse
+      .navbar-inner
+        .container
+          a.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.brand(href='/') MicroGHelp
+          .nav-collapse
+            ul.nav
+              li.active
+                a(href='/') Home                
+              li
+                a(href='/login') Log In
+              li
+                a(href='/reg') Sign Up
+    block content
+    #container.container
+  script(src='/javascripts/jquery.js')
+  script(src='/javascripts/bootstrap.js')
